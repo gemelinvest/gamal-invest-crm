@@ -2000,3 +2000,8 @@ body.compact-ui, #appRoot{
   background: #1e3a5f !important; /* כחול נייבי כמו הסיידבר */
   border-bottom: none;
 }
+/* === הצעה חדשה – פס עליון בלבד (האזור המסומן) === */
+[data-route="proposal"] .main > .topbar,
+[data-route="proposal"] .main > header {
+  background: #1e3a5f !important; /* כחול נייבי כמו הסיידבר */
+}
