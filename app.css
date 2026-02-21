@@ -1994,3 +1994,9 @@ body.compact-ui, #appRoot{
   background:#162d49 !important;
   color:#f1e6c8 !important;
 }
+/* === הצעה חדשה – Header עליון בלבד === */
+[data-route="proposal"] .topbar,
+[data-route="proposal"] .proposalHeader {
+  background: #1e3a5f !important; /* כחול נייבי כמו הסיידבר */
+  border-bottom: none;
+}
