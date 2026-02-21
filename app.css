@@ -1985,13 +1985,60 @@ body.compact-ui, #appRoot{
 }
 
 
-/* === Topbar: "+ הצעה חדשה" button === */
+/* === Topbar: "+ הצעה חדשה" button (Premium Blue + Cream-Gold) === */
 #newProposalBtn{
-  background: #1e3a5f !important; /* sidebar color */
-  color: #d6c6a1 !important;      /* cream-gold */
-  border-color: rgba(214,198,161,.45) !important;
+  background: #1e3a5f !important; /* sidebar blue */
+  color: #F1E6CC !important;      /* cream-gold */
+  border: 1px solid rgba(241,230,204,.42) !important;
+  border-radius: 14px !important;
+  padding: 10px 18px !important;
+  font-weight: 900 !important;
+  letter-spacing: .2px !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+
+  box-shadow:
+    0 10px 26px rgba(30,58,95,.40),
+    inset 0 1px 0 rgba(255,255,255,.16) !important;
+
+  transition:
+    background .18s ease,
+    box-shadow .18s ease,
+    transform .08s ease,
+    border-color .18s ease,
+    color .18s ease !important;
 }
+
+/* keep the + / any inline icon in cream-gold */
+#newProposalBtn *{
+  color: #F1E6CC !important;
+}
+
+/* Hover */
 #newProposalBtn:hover{
-  background:#162d49 !important;
-  color:#f1e6c8 !important;
+  background: #24456f !important; /* slightly lighter */
+  border-color: rgba(241,230,204,.58) !important;
+  transform: translateY(-1px) !important;
+  box-shadow:
+    0 14px 32px rgba(30,58,95,.48),
+    0 0 0 3px rgba(241,230,204,.16),
+    inset 0 1px 0 rgba(255,255,255,.20) !important;
+}
+
+/* Active */
+#newProposalBtn:active{
+  transform: translateY(0) !important;
+  box-shadow:
+    0 7px 16px rgba(30,58,95,.38),
+    inset 0 2px 7px rgba(0,0,0,.22) !important;
+}
+
+/* Focus (accessibility) */
+#newProposalBtn:focus-visible{
+  outline: none !important;
+  box-shadow:
+    0 0 0 3px rgba(241,230,204,.34),
+    0 12px 30px rgba(30,58,95,.46) !important;
 }
